@@ -16,7 +16,7 @@
     <tr th:each="room : ${rooms}">
         <td th:text="${room.number}">Number</td>
         <td th:text="${room.name}">Name</td>
-        <td th:text="${room.bedInfo}">Info</td>
+        <td th:text="${room.info}"></td>
     </tr>
 </table>
 <p th:if="${#lists.isEmpty(rooms)}">No rooms available</p>
